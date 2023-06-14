@@ -1,0 +1,18 @@
+<html>
+  <head>
+    {{ content_for_header }}
+    {{ 'style.css' | asset_url | stylesheet_tag }}
+  </head>
+  <body>
+    {% render 'top' %}
+    {% render 'card' %}
+    {% render 'info' %}
+    {% render 'book' %}
+    {% render 'work' %}
+    {% render 'workcard' %}
+    {% render 'payment' %}
+    {% render 'bottom' %}
+    {% render 'contact' %}
+    {{ content_for_layout }}
+  </body>
+</html>
